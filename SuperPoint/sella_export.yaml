@@ -1,0 +1,18 @@
+data:
+    name: 'sella'
+    cache_in_memory: false
+    validation_size: 100
+    preprocessing:
+        resize: [320,320]
+model:
+    name: 'super_point'
+    batch_size: 1
+    eval_batch_size: 1
+    learning_rate: 0.0001
+    lambda_d: 0.05
+    positive_margin: 1
+    negative_margin: 0.2
+    lambda_loss: 10000
+    detection_threshold: 0.001
+    nms: 4
+eval_iter: -1
